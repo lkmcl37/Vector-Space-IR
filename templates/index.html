@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Movie Database</title>
+
+        <!-- CSS -->
+		<link rel="stylesheet" href="http://cdn.bootcss.com/twitter-bootstrap/3.0.1/css/bootstrap.min.css"> 
+        <link rel="stylesheet" href="http://cdn.bootcss.com/twitter-bootstrap/3.0.1/css/bootstrap-theme.min.css">
+        <style type="text/css">
+
+	body {
+		font-size: 18px;
+		font-weight: 300;
+		color: #888;
+		line-height: 30px;
+		text-align: center;
+		background-position : center;
+		background-attachment : fixed;
+		background-repeat : no-repeatrepeat;
+	}
+
+	strong {
+		font-weight: 500; 
+	}
+
+	.inner-bg {
+		padding: 80px 0 150px 0;
+	}
+
+	.top-content .text {
+		color: #fff;
+	}
+
+	.top-content .text h1 { color: #fff; }
+
+	.top-content .description a {
+		color: #fff;
+	}
+
+	.form-box {
+		margin-top: 35px;
+	}
+
+	.form-top {
+		padding: 0 25px 0px 25px;
+		background: #444;
+		background: rgba(0, 0, 0, 0.35);
+		-moz-border-radius: 4px 4px 0 0; -webkit-border-radius: 4px 4px 0 0; border-radius: 4px 4px 0 0;
+		text-align: left;
+	}
+
+	.form-top-left {
+		float: left;
+		width: 70%;
+		padding-top: 25px;
+	}
+
+	.form-top-right {
+		float: left;
+		width: 30%;
+		padding-top: 5px;
+		font-size: 66px;
+		color: #fff;
+		line-height: 0px;
+		text-align: right;
+		opacity: 0.3;
+	}
+
+	.form-bottom {
+		padding: 25px 25px 30px 25px;
+		background: #444;
+		background: rgba(0, 0, 0, 0.3);
+		-moz-border-radius: 0 0 4px 4px; -webkit-border-radius: 0 0 4px 4px; border-radius: 0 0 4px 4px;
+		text-align: left;
+	}
+
+	.form-bottom form button.btn {
+		width: 100%;
+		color: #ffffff;
+		background: #066fa8;
+	}	
+	</style>
+    </head>
+
+	
+    <body>
+		<body background={{url_for('static', filename='1.jpg')}}>
+        <!-- Top content -->
+        <div class="top-content">
+            <div class="inner-bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-8 col-sm-offset-2 text">
+                            <h1><strong>What to Watch v2</strong></h1>
+                            <div class="description">
+                            	<p>This is a database of 2016 movies.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-sm-offset-3 form-box">
+                        	<div class="form-top">
+                        		<div class="form-top-left">
+                            		<p>Enter your keywords:</p>
+                        		</div>
+                        		<div class="form-top-right">
+                        		</div>
+                            </div>
+                            <div class="form-bottom">
+			                    <form role = "form" action="" method="post" class="search-form">
+			                    	<div class="form-group">
+			                        	<input type="text" name="form-search" value="" placeholder="try 'Janaan'" class="form-search form-control" id="form-search">
+			                        </div>
+			                        <button type="submit" class="btn">Search</button>
+			                    </form>
+		                    </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		
+	        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; KaMan Leong 2017</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+		
+	<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script> 
+    <script src="http://cdn.bootcss.com/twitter-bootstrap/3.0.1/js/bootstrap.min.js"></script> 
+	
+    </body>
+</html>

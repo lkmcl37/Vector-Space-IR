@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>{{title}}</title>
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/blog-post.css" rel="stylesheet">
+    <style type="text/css">
+    	               
+body {
+    padding-top: 70px;
+}
+
+footer {
+    margin: 50px 0;
+}
+
+                    
+    </style>
+</head>
+
+<body>
+    <!-- Page Content -->
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-8">
+
+                <h1>{{title}}</h1>
+				<table class="infobox" style="width:300px;">
+				{% if language %}
+				<tr>
+					<td>Language:	</td>
+				<td>{{language}}</td>
+				</tr>
+				{% endif %}
+				{% if country %}
+				<tr>
+					<td>Country:	</td>
+				<td>{{country}}</td>
+					</tr>
+				{% endif %}
+				{% if starring %}
+				<tr>
+				<td>Starring:	</td>
+					<td>{{starring}}</td>
+				</tr>
+				{% endif %}
+				{% if runtime%}
+				<tr>
+				<td>Runtime:	</td>
+					<td>{{runtime}}</td>
+				</tr>
+				{% endif %}
+				{% if categories %}
+				<tr>
+					<td>Categories:	</td>
+				<td>{{categories}}</td>
+				</tr>
+				{% endif %}
+				</table>
+				
+				{% if text%}
+                <hr>
+                <p align="justify"> {{text}}</p>
+				
+                <hr>
+				{% endif %}
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; KaMan Leong 2017</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
